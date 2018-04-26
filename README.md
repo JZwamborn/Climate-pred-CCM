@@ -40,11 +40,11 @@ k13,"sun"
 k14,"tornado"
 k15,"wind"
 
-We plan to extend this dataset with a few variables (time/day/etc) by using the twitter API to gather more information about the tweets.
+We plan to extend this dataset with a few variables (time/day/etc) by using the twitter API to gather more information about the tweets. [2] uses day, time, month, location in their tweet sentiment analyzer. 
 
 ### Approach
 
-Our plan is to build a text classifier that can predict these labels on the test set (42.000 tweets). Our initial plan is to use a dedicated tweet NLP (http://www.cs.cmu.edu/~ark/TweetNLP/) to analyze the tweets. For feature extraction we plan to use basic tf-idf, n-grams as a starting point.
+Our plan is to build a text classifier that can predict these labels on the test set (42.000 tweets). Our initial plan is to use a dedicated tweet NLP (http://www.cs.cmu.edu/~ark/TweetNLP/) to analyze the tweets. For feature extraction we plan to use basic tf-idf, n-grams as a starting point, n-grams are also used in [2] to analyse tweets.
 
 Most competitors in the kaggle competition used a version of Ridge Regression to fit the data - we plan to also do this in Python, using the sklearn General Regression module (http://scikit-learn.org/stable/modules/linear_model.html#ridge-regression).
 
@@ -53,7 +53,6 @@ Most competitors in the kaggle competition used a version of Ridge Regression to
 
 The first study we found which could contribute to ours is [1], which sort of did the opposite of what we are planning to do. They used features such as geography, season, weather, and time (i.e. day-of-the-month/week) to predict the sentiment of tweets. The methods they use are decision trees. 
 
-A possible technique we could use is the the one that is used in [2]. In their research they used a Bayesian approach to create a Twitter sentiment classifier, based on the author, location and the time of tweets.
 
  
 
