@@ -7,6 +7,8 @@ Project proposal: Luuk Arts (s4396863) & Jordy Ripperda (s4381386) & Jesse Zwamb
 
 For our final project we propose to conduct a study where we predict climate and time aspects (e.g. weather, season, month, day) based on Twitter messages. This way we can investigate the effect seasonal features have on the sentiment expressed in tweets.
 
+### Dataset
+
 To do so, we found a dataset that is a part of the Kaggle competition "Partly Sunny with a chance of Hashtags", a CrowdFlower competition (https://www.kaggle.com/c/crowdflower-weather-twitter). It consists of about 78.000 training tweets which are labeled as follows:
 
 s = sentiment
@@ -40,9 +42,14 @@ k15,"wind"
 
 We plan to extend this dataset with a few variables (time/day/etc) by using the twitter API to gather more information about the tweets.
 
+### Approach
+
 Our plan is to build a text classifier that can predict these labels on the test set (42.000 tweets). Our initial plan is to use a dedicated tweet NLP (http://www.cs.cmu.edu/~ark/TweetNLP/) to analyze the tweets. For feature extraction we plan to use basic tf-idf, n-grams as a starting point.
 
 Most competitors in the kaggle competition used a version of Ridge Regression to fit the data - we plan to also do this in Python, using the sklearn General Regression module (http://scikit-learn.org/stable/modules/linear_model.html#ridge-regression).
+
+
+### Prior Research
 
 The first study we found which could contribute to ours is [1], which sort of did the opposite of what we are planning to do. They used features such as geography, season, weather, and time (i.e. day-of-the-month/week) to predict the sentiment of tweets. The methods they use are decision trees. 
 
