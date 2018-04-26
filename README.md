@@ -38,7 +38,11 @@ k13,"sun"
 k14,"tornado"
 k15,"wind"
 
-Our plan is to build a text classifier that can predict these labels on the test set (42.000 tweets). 
+We plan to also use the twitter API to gather more information about the tweets (time/day/etc).
+
+Our plan is to build a text classifier that can predict these labels on the test set (42.000 tweets). Our initial plan is to use a dedicated tweet NLT (http://www.cs.cmu.edu/~ark/TweetNLP/) to analyze the tweets. For feature extraction we plan to use basic tf-idf, n-grams as a starting point.
+
+Most competitors in the kaggle competition used a version of Ridge Regression to fit the data - we plan to also do this in Python, using the sklearn General Regression module (http://scikit-learn.org/stable/modules/linear_model.html#ridge-regression).
  
 
 The first study we found which could contribute to ours is [1], which sort of did the opposite of what we are planning to do. They used features such as geography, season, weather, and time (i.e. day-of-the-month/week) to predict the sentiment of tweets. The methods they use are decision trees. Although we don’t know the exact methods we will use in our study, we are thinking about more advanced machine learning techniques in order to make our predictions.
