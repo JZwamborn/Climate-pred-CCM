@@ -4,3 +4,10 @@ scripts
 include
 pip-selfcheck.json
 pyvenv.cfg
+ark-tweet-nlp-0.3.2
+
+#losse files voor parsing van training en test data:
+data/pandas.txt
+data/tweets_test.txt
+test_parser_step1.txt
+test_tokenized.txt
