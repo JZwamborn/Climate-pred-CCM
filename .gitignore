@@ -5,6 +5,7 @@ include
 pip-selfcheck.json
 pyvenv.cfg
 ark-tweet-nlp-0.3.2
+.ipnyb_checkpoints
 
 #losse files voor parsing van training en test data:
 data/pandas.txt
